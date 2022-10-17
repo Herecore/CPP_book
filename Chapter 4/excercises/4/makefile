@@ -1,4 +1,4 @@
-CPPFLAGS=-Werror -Wall -Wextra -Wconversion -Wunreachable-code -Wuninitialized -pedantic-errors -Wno-error=unused-variable -Wshadow -Wnon-virtual-dtor
+CPPFLAGS=-Werror -Wall -Wextra -Wunreachable-code -Wuninitialized -pedantic-errors -Wno-error=unused-variable -Wshadow -Wnon-virtual-dtor
 MAKEFLAGS="-j 12"
 
 program: program.cpp
