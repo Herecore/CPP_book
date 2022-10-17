@@ -6,7 +6,28 @@
 
 int main()
 {
+    vector<double> distance;
+    
+    // Values input
+    double input;
+    cout << "Input the distance between each city in km (space separated):\n";
+    while (cin >> input)
+        distance.push_back(input);
 
+    // Compute the sum of all distances
+    double sum = 0;
+    for (double x : distance)
+        sum += x;
+    cout << "\nTotal distance is " << sum << "km\n";
 
+    // Smallest and greatest distance
+    sort(distance);
+    cout << "The smallest distance between two cities is " 
+        << distance[0] << "km!\n";
+    cout << "The greatest distance between two cities is " 
+        << distance[int(distance.size()) - 1] << "km!\n";
 
+    // Mean distance
+    cout << "Mean distance between two cities is "
+        << sum / double(distance.size()) << "km!\n";
 }
